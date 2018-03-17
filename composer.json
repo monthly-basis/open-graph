@@ -1,0 +1,14 @@
+{
+    "minimum-stability": "dev",
+    "name": "leo-galleguillos/open-graph",
+    "license": "MIT",
+    "require": {
+        "zendframework/zend-test": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeoGalleguillos\\OpenGraph\\": "src/",
+            "LeoGalleguillos\\OpenGraphTest\\": "test/"
+        }
+    }
+}
