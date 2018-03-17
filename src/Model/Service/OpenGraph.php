@@ -3,17 +3,25 @@ namespace LeoGalleguillos\OpenGraph\Model\Service;
 
 class OpenGraph
 {
-    protected $array = [];
+    protected $properties = [];
 
-    public function getArray()
+    public function getProperties()
     {
-        return $this->array;
+        return $this->properties;
     }
 
-    public function set(
+    public function setProperty(
         string $property,
         string $content
     ) {
-        $array[$property] = $content;
+        $this->properties[$property] = $content;
+    }
+
+    public function setProperties(
+        array $array
+    ) {
+        foreach ($array as $property => $content) {
+            $this->setProperty($property, content);
+        }
     }
 }
