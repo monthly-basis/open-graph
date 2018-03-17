@@ -21,7 +21,7 @@ class OpenGraph
         array $array
     ) {
         foreach ($array as $property => $content) {
-            $this->setProperty($property, content);
+            $this->setProperty($property, $content);
         }
     }
 }
