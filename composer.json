@@ -3,6 +3,7 @@
     "name": "leo-galleguillos/open-graph",
     "license": "MIT",
     "require": {
+        "leo-galleguillos/string": "dev-master",
         "zendframework/zend-test": "^3.1"
     },
     "autoload": {

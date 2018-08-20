@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de5299c1e46c494f5f6c54ae731b20d0",
-    "content-hash": "62b81537b1da982eb7f2a9b88e7f12fb",
+    "hash": "3c97107f8119e28db3be02e819afbecf",
+    "content-hash": "73875764a1cb111c9750ba98865efde4",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -91,6 +91,36 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
+        },
+        {
+            "name": "leo-galleguillos/string",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/String.git",
+                "reference": "3d9c3173570a95a1224332538992f1bb58dd6cd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/3d9c3173570a95a1224332538992f1bb58dd6cd2",
+                "reference": "3d9c3173570a95a1224332538992f1bb58dd6cd2",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\String\\": "src/",
+                    "LeoGalleguillos\\StringTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-08-15 17:32:47"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2489,7 +2519,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "leo-galleguillos/string": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
