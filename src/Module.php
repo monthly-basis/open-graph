@@ -13,7 +13,7 @@ class Module
             'view_helpers' => [
                 'aliases' => [
                     'ogHelper' => OpenGraphHelper\OpenGraph::class,
-                    'render' => OpenGraphHelper\Render::class,
+                    'getHtml' => OpenGraphHelper\Html::class,
                 ],
                 'factories' => [
                     OpenGraphHelper\OpenGraph::class => function ($serviceManager) {
@@ -21,8 +21,8 @@ class Module
                             $serviceManager->get(OpenGraphService\OpenGraph::class)
                         );
                     },
-                    OpenGraphHelper\Render::class => function ($serviceManager) {
-                        return new OpenGraphHelper\Render(
+                    OpenGraphHelper\Html::class => function ($serviceManager) {
+                        return new OpenGraphHelper\Html(
                             $serviceManager->get(OpenGraphService\OpenGraph::class),
                             $serviceManager->get(StringService\Escape::class)
                         );

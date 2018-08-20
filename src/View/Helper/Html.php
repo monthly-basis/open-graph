@@ -5,7 +5,7 @@ use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
 use LeoGalleguillos\String\Model\Service as StringService;
 use Zend\View\Helper\AbstractHelper;
 
-class Render extends AbstractHelper
+class Html extends AbstractHelper
 {
     public function __construct(
         OpenGraphService\OpenGraph $openGraphService,
@@ -15,12 +15,14 @@ class Render extends AbstractHelper
         $this->escapeService    = $escapeService;
     }
 
-    public function __invoke()
+    public function __invoke(): string
     {
+        $html = '';
         foreach ($this->openGraphService->getProperties() as $property => $content) {
             $propertyEscaped = $this->escapeService->escape($property);
             $contentEscaped  = $this->escapeService->escape($content);
-            echo "<meta property=\"$propertyEscaped\" content=\"$contentEscaped\">";
+            $html .= "<meta property=\"$propertyEscaped\" content=\"$contentEscaped\">";
         }
+        return $html;
     }
 }
