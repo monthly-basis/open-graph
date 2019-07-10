@@ -16,15 +16,15 @@ class Module
                     'getHtml' => OpenGraphHelper\Html::class,
                 ],
                 'factories' => [
-                    OpenGraphHelper\OpenGraph::class => function ($serviceManager) {
+                    OpenGraphHelper\OpenGraph::class => function ($sm) {
                         return new OpenGraphHelper\OpenGraph(
-                            $serviceManager->get(OpenGraphService\OpenGraph::class)
+                            $sm->get(OpenGraphService\OpenGraph::class)
                         );
                     },
-                    OpenGraphHelper\Html::class => function ($serviceManager) {
+                    OpenGraphHelper\Html::class => function ($sm) {
                         return new OpenGraphHelper\Html(
-                            $serviceManager->get(OpenGraphService\OpenGraph::class),
-                            $serviceManager->get(StringService\Escape::class)
+                            $sm->get(OpenGraphService\OpenGraph::class),
+                            $sm->get(StringService\Escape::class)
                         );
                     },
                 ],
@@ -36,7 +36,7 @@ class Module
     {
         return [
             'factories' => [
-                OpenGraphService\OpenGraph::class => function ($serviceManager) {
+                OpenGraphService\OpenGraph::class => function ($sm) {
                     return new OpenGraphService\OpenGraph();
                 },
             ],
