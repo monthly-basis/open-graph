@@ -12,8 +12,8 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
-                    'ogHelper'  => OpenGraphHelper\OpenGraph::class,
-                    'getOgHtml' => OpenGraphHelper\Html::class,
+                    'getOgHtml'    => OpenGraphHelper\Html::class,
+                    'getOgService' => OpenGraphHelper\OpenGraph::class,
                 ],
                 'factories' => [
                     OpenGraphHelper\OpenGraph::class => function ($sm) {
