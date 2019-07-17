@@ -14,6 +14,9 @@ class Module
                 'aliases' => [
                     'getOgHtml'    => OpenGraphHelper\Html::class,
                     'getOgService' => OpenGraphHelper\OpenGraph::class,
+
+                    // Deprecated
+                    'ogHelper' => OpenGraphHelper\OpenGraph::class,
                 ],
                 'factories' => [
                     OpenGraphHelper\OpenGraph::class => function ($sm) {
