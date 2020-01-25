@@ -1,10 +1,9 @@
 {
-    "minimum-stability": "dev",
     "name": "leo-galleguillos/open-graph",
     "license": "MIT",
     "require": {
-        "leo-galleguillos/string": "dev-master",
-        "zendframework/zend-test": "^3.1"
+        "laminas/laminas-test": "^3.1",
+        "leo-galleguillos/string": "dev-master"
     },
     "autoload": {
         "psr-4": {
