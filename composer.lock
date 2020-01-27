@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d00408408a5c732d6cdb0837d9b024b5",
+    "content-hash": "7ecb0d699ff7977b1e647fc0ba671b8a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1204,7 +1204,7 @@
         },
         {
             "name": "leo-galleguillos/string",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/String.git",
@@ -2744,9 +2744,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "leo-galleguillos/string": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
