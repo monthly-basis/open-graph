@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class OpenGraphTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->openGraphService = new OpenGraphService\OpenGraph();
     }

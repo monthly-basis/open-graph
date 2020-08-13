@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class TotalTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->openGraphService = $this->createMock(
             OpenGraphService\OpenGraph::class
