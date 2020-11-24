@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\OpenGraph\View\Helper;
 
 use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
-use LeoGalleguillos\String\Model\Service as StringService;
+use MonthlyBasis\String\Model\Service as StringService;
 use Zend\View\Helper\AbstractHelper;
 
 class Html extends AbstractHelper

@@ -3,7 +3,7 @@ namespace LeoGalleguillos\OpenGraph;
 
 use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
 use LeoGalleguillos\OpenGraph\View\Helper as OpenGraphHelper;
-use LeoGalleguillos\String\Model\Service as StringService;
+use MonthlyBasis\String\Model\Service as StringService;
 
 class Module
 {
