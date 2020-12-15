@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\OpenGraphTest\View\Helper;
+namespace MonthlyBasis\OpenGraphTest\View\Helper;
 
-use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
-use LeoGalleguillos\OpenGraph\View\Helper as OpenGraphHelper;
+use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
+use MonthlyBasis\OpenGraph\View\Helper as OpenGraphHelper;
 use PHPUnit\Framework\TestCase;
 
 class TotalTest extends TestCase

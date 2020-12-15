@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\OpenGraph;
+namespace MonthlyBasis\OpenGraph;
 
-use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
-use LeoGalleguillos\OpenGraph\View\Helper as OpenGraphHelper;
+use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
+use MonthlyBasis\OpenGraph\View\Helper as OpenGraphHelper;
 use MonthlyBasis\String\Model\Service as StringService;
 
 class Module

@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\OpenGraph\Model\Service;
+namespace MonthlyBasis\OpenGraph\Model\Service;
 
 class OpenGraph
 {

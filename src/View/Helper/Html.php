@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\OpenGraph\View\Helper;
+namespace MonthlyBasis\OpenGraph\View\Helper;
 
-use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
+use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
 use MonthlyBasis\String\Model\Service as StringService;
 use Zend\View\Helper\AbstractHelper;
 

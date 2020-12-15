@@ -2,7 +2,7 @@
 
 return [
     'modules' => [
-        'LeoGalleguillos\OpenGraph',
+        'MonthlyBasis\OpenGraph',
         'MonthlyBasis\String',
         'Zend\Router',
     ],

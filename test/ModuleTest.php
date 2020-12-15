@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\OpenGraphTest;
+namespace MonthlyBasis\OpenGraphTest;
 
-use LeoGalleguillos\OpenGraph\Module;
+use MonthlyBasis\OpenGraph\Module;
 use PHPUnit\Framework\TestCase;
 use Zend\Mvc\Application;
 

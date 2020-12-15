@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\OpenGraphTest\Model\Service\OpenGraphs;
+namespace MonthlyBasis\OpenGraphTest\Model\Service\OpenGraphs;
 
-use LeoGalleguillos\OpenGraph\Model\Service as OpenGraphService;
+use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
 use PHPUnit\Framework\TestCase;
 
 class OpenGraphTest extends TestCase
