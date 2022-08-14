@@ -2,7 +2,7 @@
 namespace MonthlyBasis\OpenGraph\View\Helper;
 
 use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class OpenGraph extends AbstractHelper
 {

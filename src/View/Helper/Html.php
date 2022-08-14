@@ -3,7 +3,7 @@ namespace MonthlyBasis\OpenGraph\View\Helper;
 
 use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
 use MonthlyBasis\String\Model\Service as StringService;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class Html extends AbstractHelper
 {
