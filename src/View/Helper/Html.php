@@ -21,7 +21,7 @@ class Html extends AbstractHelper
         foreach ($this->openGraphService->getProperties() as $property => $content) {
             $propertyEscaped = $this->escapeService->escape($property);
             $contentEscaped  = $this->escapeService->escape($content);
-            $html .= "<meta property=\"$propertyEscaped\" content=\"$contentEscaped\">";
+            $html .= "<meta property=\"$propertyEscaped\" content=\"$contentEscaped\">\n";
         }
         return $html;
     }
