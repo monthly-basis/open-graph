@@ -5,7 +5,7 @@ use MonthlyBasis\OpenGraph\Model\Service as OpenGraphService;
 use MonthlyBasis\OpenGraph\View\Helper as OpenGraphHelper;
 use PHPUnit\Framework\TestCase;
 
-class TotalTest extends TestCase
+class OpenGraphTest extends TestCase
 {
     protected function setUp(): void
     {
@@ -14,14 +14,6 @@ class TotalTest extends TestCase
         );
         $this->openGraphHelper = new OpenGraphHelper\OpenGraph(
             $this->openGraphService
-        );
-    }
-
-    public function testInitialize()
-    {
-        $this->assertInstanceOf(
-            OpenGraphHelper\OpenGraph::class,
-            $this->openGraphHelper
         );
     }
 
