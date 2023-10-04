@@ -5,6 +5,11 @@ class OpenGraph
 {
     protected array $properties = [];
 
+    public function getProperty(string $property): string|null
+    {
+        return $this->properties[$property] ?? null;
+    }
+
     public function getProperties()
     {
         return $this->properties;

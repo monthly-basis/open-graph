@@ -19,6 +19,19 @@ class OpenGraphTest extends TestCase
         );
     }
 
+    public function test_getProperty()
+    {
+        $this->assertNull(
+            $this->openGraphService->getProperty('foo')
+        );
+
+        $this->openGraphService->setProperty('foo', 'bar');
+        $this->assertSame(
+            'bar',
+            $this->openGraphService->getProperty('foo')
+        );
+    }
+
     public function testGetProperties()
     {
         $this->assertSame(
