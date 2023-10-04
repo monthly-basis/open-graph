@@ -11,14 +11,6 @@ class OpenGraphTest extends TestCase
         $this->openGraphService = new OpenGraphService\OpenGraph();
     }
 
-    public function testInitialize()
-    {
-        $this->assertInstanceOf(
-            OpenGraphService\OpenGraph::class,
-            $this->openGraphService
-        );
-    }
-
     public function test_getProperty()
     {
         $this->assertNull(
@@ -32,7 +24,7 @@ class OpenGraphTest extends TestCase
         );
     }
 
-    public function testGetProperties()
+    public function test_getProperties()
     {
         $this->assertSame(
             [],
@@ -40,7 +32,7 @@ class OpenGraphTest extends TestCase
         );
     }
 
-    public function testSetProperty()
+    public function test_setProperty()
     {
         $this->openGraphService->setProperty('property', 'content');
         $this->openGraphService->setProperty('property2', 'content');
@@ -51,7 +43,7 @@ class OpenGraphTest extends TestCase
         );
     }
 
-    public function testSetProperties()
+    public function test_setProperties()
     {
         $this->openGraphService->setProperties([
             'property1' => 'content1',
